@@ -19,7 +19,15 @@ function App() {
           <Products addCart= {addCart}></Products>
           <Placement cart ={cart} ></Placement>
         </div>
-        
+        <div className="card">
+          <h1>heading</h1>
+        </div>
+        <div className="card-2">
+          <h1>heading-1</h1>
+        </div>
+      <div class="card-3">
+        <h1>Heading</h1>
+      </div>
     </div>
   )
 }
