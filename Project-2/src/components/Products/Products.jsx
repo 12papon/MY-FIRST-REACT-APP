@@ -9,7 +9,7 @@ const Products = ()=> {
     },[])
     
     return(
-        <div>
+        <div className="grid grid-cols-3 grid-rows-1 max-sm:grid-cols-1 max-md:grid-cols-2 gap-2">
            {
             fetchData.map(value => <SingleProduct
                 key={value.id}
