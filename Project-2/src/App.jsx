@@ -24,6 +24,9 @@ function App() {
         <div className="card">
           <h1>heading</h1>
         </div>
+        <div className="card-2">
+          <h1>heading-1</h1>
+        </div>
     </div>
   )
 }
