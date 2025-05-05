@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@theme{
+    --color-primary: #30336b;
+    --color-write: #dcdde1;
+    --color-button: #353b48;
+    --color-hover: #2f3640;
+    --color-progress: #4cd137;
+    --color-progress2: #44bd32;
+    --color-border: #487eb0;
+}
+
+@layer base{
+    h1{
+        @apply text-2xl font-medium
+    }
+    h2{
+        @apply text-lg font-medium
+    }
+    h3{
+        @apply text-[1em] font-medium
+    }
+    h4{
+        @apply text-[0.8em] font-medium
+    }
+}
