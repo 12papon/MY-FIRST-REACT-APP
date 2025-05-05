@@ -11,6 +11,7 @@ const SinglePlace = ({singleCart})=>{
                 <p>Price: {price}</p>
                 <button className="border rounded text-sm leading-3.5 hover:bg-amber-200 duration-150 px-2 py-1 cursor-pointer">Add To Cart</button>
             </div>
+            <hr />
         </div>
     )
 }
