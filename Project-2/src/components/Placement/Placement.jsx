@@ -3,7 +3,7 @@ import SinglePlace from "../SinglePlace/SinglePlace";
 const Placement = ({cart})=>{  
     return(
         <div>
-            <h2>Place items</h2>
+            <h2>Place items : {cart.length}</h2>
             
             {
                 cart.map( singleCart => <SinglePlace 
