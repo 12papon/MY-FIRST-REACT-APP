@@ -21,6 +21,9 @@ function App() {
           <Products addCart= {addCart}></Products>
           <Placement cart ={cart} ></Placement>
         </div>
+        <div className="card">
+          <h1>heading</h1>
+        </div>
     </div>
   )
 }
