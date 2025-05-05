@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "price": 25.99
+  },
+  {
+    "id": 2,
+    "name": "Laptop Stand",
+    "price": 45.49
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Headphones",
+    "price": 59.99
+  },
+  {
+    "id": 4,
+    "name": "Gaming Keyboard",
+    "price": 89.99
+  },
+  {
+    "id": 5,
+    "name": "Smartphone Charger",
+    "price": 15.49
+  },
+  {
+    "id": 6,
+    "name": "LED Desk Lamp",
+    "price": 35.00
+  },
+  {
+    "id": 7,
+    "name": "External Hard Drive 1TB",
+    "price": 79.99
+  },
+  {
+    "id": 8,
+    "name": "Webcam 1080p",
+    "price": 49.99
+  },
+  {
+    "id": 9,
+    "name": "Fitness Tracker Watch",
+    "price": 120.00
+  },
+  {
+    "id": 10,
+    "name": "Portable Speaker",
+    "price": 60.00
+  }
+]

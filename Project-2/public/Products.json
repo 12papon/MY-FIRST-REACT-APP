@@ -1,0 +1,12 @@
+[
+    { "id": 1, "name": "Product A", "price": 29.99 },
+    { "id": 2, "name": "Product B", "price": 15.50 },
+    { "id": 3, "name": "Product C", "price": 45.00 },
+    { "id": 4, "name": "Product D", "price": 23.75 },
+    { "id": 5, "name": "Product E", "price": 9.99 },
+    { "id": 6, "name": "Product F", "price": 60.00 },
+    { "id": 7, "name": "Product G", "price": 34.95 },
+    { "id": 8, "name": "Product H", "price": 80.49 },
+    { "id": 9, "name": "Product I", "price": 12.00 },
+    { "id": 10, "name": "Product J", "price": 99.99 }
+  ]
