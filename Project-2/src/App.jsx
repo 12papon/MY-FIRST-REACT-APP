@@ -21,10 +21,6 @@ function App() {
           <Products addCart= {addCart}></Products>
           <Placement cart ={cart} ></Placement>
         </div>
-        <h3>my name is papon khan</h3>
-        <div className="card">
-          <h1>heading</h1>
-        </div>
     </div>
   )
 }
