@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SingleProduct from "../SingleProduct/SingleProduct";
-const Products = ()=> {
+const Products = ({card})=> {
     const [fetchData , setFetchData] = useState([])
     useEffect(()=>{
         fetch('FakeProduct.json')
@@ -14,6 +14,7 @@ const Products = ()=> {
             fetchData.map(value => <SingleProduct
                 key={value.id}
                 ProductData = {value}
+                card = {card}
             ></SingleProduct> )
            }
         </div>
