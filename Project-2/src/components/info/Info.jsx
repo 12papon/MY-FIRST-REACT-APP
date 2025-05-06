@@ -1,19 +1,21 @@
 import React from 'react'
-import { useLoaderData } from 'react-router-dom'
+import { useLoaderData } from 'react-router-dom';
 
 const Info = () => {
-    const info = useLoaderData();
-    const {id, category, description, title, image} = info;
-    
+  const infoData = useLoaderData();
+  const {id, title, price ,description,category,image} = infoData;
+  console.log(title);
   return (
     <div>
-        <div className="flex items-start pt-10 ">
-            <img className='size-20 basis-2xl h-auto' src= {image} alt="" />
-            <div className=''>
-                <h1 className='text-2xl font-bold'>{title}</h1>
-                <p>{description}</p>
-                <p>Category: {category}</p>
-            </div>
+        <div className='flex items-center max-sm:flex-col  justify-around p-5'>
+          <img className='size-50 p-2' src={image} alt="" />
+          <div className='text-left p-2'>
+            <h1>{title}</h1>
+            <hr />
+            <h3 className='font-bold'>Description:</h3>
+            <p className='tracking-normal leading-4 text-[18px]'>{description}</p>
+            <p className='text-[22px] font-bold  mt-2'>Price: {price}$</p>
+          </div>
         </div>
     </div>
   )
