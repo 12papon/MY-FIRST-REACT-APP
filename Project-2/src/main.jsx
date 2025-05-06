@@ -17,6 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/home",
+        loader: ()=> fetch('https://fakestoreapi.com/products'),
         element: <Home></Home>
       },
       {
