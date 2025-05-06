@@ -8,7 +8,7 @@ const SingleProduct = ({ProductData, card}) => {
         <h2>Name : {name}</h2>
         <p>ID : {id}</p>
         <p>Price : {price}</p>
-        <button onClick={()=> card(ProductData)} className='bg-progress px-3 py-1 hover:not-focus:bg-indigo-700 rounded font-normal text-write group-hover:bg-primary cursor-pointer'>Add Cart</button>
+        <button onClick={()=> card(ProductData)} className='bg-progress px-3 py-1 hover:not-focus:bg-purple-700 rounded font-normal text-write group-hover:bg-primary cursor-pointer'>Add Cart</button>
     </div>
   )
 }
