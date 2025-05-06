@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './App.css'
 import Products from './components/Products/Products'
 import Placement from './components/Placement/Placement'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
   const [singleData, setSingleData] = useState([])
@@ -11,9 +12,12 @@ function App() {
   }
  
   return (
-    <div className='flex'>
-      <Products card={card}></Products>
-      <Placement item = {singleData}></Placement>
+    <div>
+      <Navbar></Navbar>
+      <div className='flex'>
+          <Products card={card}></Products>
+          <Placement item = {singleData}></Placement>
+      </div>
     </div>
   )
 }

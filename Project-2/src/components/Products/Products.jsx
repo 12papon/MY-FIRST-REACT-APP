@@ -4,8 +4,8 @@ const Products = ({card})=> {
     const [fetchData , setFetchData] = useState([])
     useEffect(()=>{
         fetch('FakeProduct.json')
-        .then(res => res.json())
-        .then(data => setFetchData(data))
+            .then(res => res.json())
+            .then(data => setFetchData(data))
     },[])
     
     return(
