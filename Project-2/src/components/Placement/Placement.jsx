@@ -1,17 +1,21 @@
-import React from "react";
-import SinglePlace from "../SinglePlace/SinglePlace";
-const Placement = ({cart})=>{  
-    return(
-        <div>
-            <h2>Place items : {cart.length}</h2>
+import React from 'react'
+import Cart from '../cartItem/Cart';
+
+const Placement = ({item}) => {
+    
+  return (
+    <div>
+        <h1>Placement</h1>
+        {
+            item.map(ele => <Cart
+
+                key={ele.id}
+                allItem = {ele}
             
-            {
-                cart.map( singleCart => <SinglePlace 
-                    key={singleCart.id}
-                    singleCart = {singleCart}
-                ></SinglePlace>)
-            }
-        </div>
-    )
+            ></Cart>)
+        }
+    </div>
+  )
 }
-export default Placement;
+
+export default Placement

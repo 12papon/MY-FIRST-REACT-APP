@@ -1,28 +1,24 @@
 import React, { useEffect, useState } from "react";
-import Product from "../Product/Product";
-
-
-const Products = ({addCart})=>{
-
-    const [products, setProducts] = useState([])
+import SingleProduct from "../SingleProduct/SingleProduct";
+const Products = ({card})=> {
+    const [fetchData , setFetchData] = useState([])
     useEffect(()=>{
-        fetch('Products.json')
-        .then(res => res.json())
-        .then(data => setProducts(data))
-        
-    }, []);
-
+        fetch('FakeProduct.json')
+            .then(res => res.json())
+            .then(data => setFetchData(data))
+    },[])
+    
     return(
-        <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-1">
-            
-             {
-                 products.map(singleProducts => <Product 
-                    key={singleProducts.id}
-                    singleProducts = {singleProducts}
-                    addCart = {addCart}
-                 ></Product>)
-             }
+        <div className="grid grid-cols-3 grid-rows-1 max-sm:grid-cols-1 max-md:grid-cols-2 gap-2">
+           {
+            fetchData.map(value => <SingleProduct
+                key={value.id}
+                ProductData = {value}
+                card = {card}
+            ></SingleProduct> )
+           }
         </div>
     )
 }
-export default Products;
+
+export default Products
