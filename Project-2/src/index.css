@@ -9,7 +9,6 @@
     --color-progress2: #44bd32;
     --color-border: #487eb0;
 }
-
 @layer base{
     h1{
         @apply text-2xl font-medium
@@ -22,5 +21,10 @@
     }
     h4{
         @apply text-[0.8em] font-medium
+    }
+}
+@layer components{
+    .btn{
+        @apply bg-indigo-600 hover:not-focus:bg-indigo-700 px-3 cursor-pointer  py-1 rounded text-white font-bold;
     }
 }

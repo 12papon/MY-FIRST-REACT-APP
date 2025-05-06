@@ -6,7 +6,7 @@ const Info = () => {
   const {id, title, price ,description,category,image} = infoData;
   console.log(title);
   return (
-    <div>
+    <div className='border rounded mt-5'>
         <div className='flex items-center max-sm:flex-col  justify-around p-5'>
           <img className='size-50 p-2' src={image} alt="" />
           <div className='text-left p-2'>

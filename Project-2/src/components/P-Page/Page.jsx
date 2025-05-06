@@ -10,7 +10,7 @@ const Page = ({details}) => {
             <h1 className='py-4 font-bold text-button'>{title}</h1>
             <h2 className='text-[22px] font-bold'>{price} $</h2>
             <Link to={`/home/${id}`}>
-                <button className='bg-indigo-600 hover:not-focus:bg-indigo-700 px-3 cursor-pointer  py-1 rounded text-white font-bold'>More Info</button>
+                <button className='btn'>More Info</button>
             </Link>
         </div>
     </div>
