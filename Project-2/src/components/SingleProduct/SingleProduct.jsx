@@ -2,7 +2,6 @@ import React from 'react'
 
 const SingleProduct = ({ProductData, card}) => {
     const {name, id , price} = ProductData
-    
   return (
     <div className='border border-border rounded-xl p-4  hover:bg-amber-200 cursor-pointer duration-300 group '>
         <h2>Name : {name}</h2>

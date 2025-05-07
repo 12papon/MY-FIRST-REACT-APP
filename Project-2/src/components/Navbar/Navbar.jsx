@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -11,8 +11,6 @@ const Navbar = () => {
             <Link className='hover:text-purple-500 duration-200 mx-2' to={"/products"}>Products</Link>
             <Link className='hover:text-purple-500 duration-200 mx-2' to={"/styling"}>styling</Link>
         </div>
-
-        <Outlet></Outlet>
     </div>
   )
 }
