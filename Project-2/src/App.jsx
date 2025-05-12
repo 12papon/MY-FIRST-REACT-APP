@@ -17,6 +17,7 @@ function App() {
       <div className='flex'>
           <Products card={card}></Products>
           <Placement item = {singleData}></Placement>
+        <h1>Hallo papon</h1>
       </div>
     </div>
   )
